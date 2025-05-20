@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" rx="10" fill="#f5f7fa" />
+  
+  <!-- Watch Outline -->
+  <rect x="120" y="25" width="160" height="250" rx="40" fill="#333333" />
+  
+  <!-- Watch Screen -->
+  <rect x="135" y="50" width="130" height="200" rx="10" fill="#000000" />
+  
+  <!-- Game Screen -->
+  <rect x="145" y="60" width="110" height="180" rx="5" fill="#1a1a1a" />
+  
+  <!-- Game Title -->
+  <rect x="155" y="70" width="90" height="20" rx="3" fill="#4e54c8" opacity="0.8" />
+  <text x="200" y="85" font-family="Arial" font-size="10" fill="white" text-anchor="middle">CLASSIC MODE</text>
+  
+  <!-- Game Grid -->
+  <g transform="translate(155, 100)">
+    <!-- Grid Background -->
+    <rect x="0" y="0" width="90" height="90" fill="#2d3436" />
+    
+    <!-- Grid Lines -->
+    <line x1="0" y1="11.25" x2="90" y2="11.25" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="22.5" x2="90" y2="22.5" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="33.75" x2="90" y2="33.75" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="45" x2="90" y2="45" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="56.25" x2="90" y2="56.25" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="67.5" x2="90" y2="67.5" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="78.75" x2="90" y2="78.75" stroke="#636e72" stroke-width="0.5" />
+    
+    <line x1="11.25" y1="0" x2="11.25" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="22.5" y1="0" x2="22.5" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="33.75" y1="0" x2="33.75" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="45" y1="0" x2="45" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="56.25" y1="0" x2="56.25" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="67.5" y1="0" x2="67.5" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="78.75" y1="0" x2="78.75" y2="90" stroke="#636e72" stroke-width="0.5" />
+    
+    <!-- Game Blocks -->
+    <!-- Row 1 -->
+    <rect x="0" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="11.25" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="22.5" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="33.75" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="45" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="56.25" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="67.5" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="78.75" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <!-- Row 2 -->
+    <rect x="0" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="22.5" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <!-- Row 3 -->
+    <rect x="56.25" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="67.5" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="78.75" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <!-- Row 4 -->
+    <rect x="0" y="33.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="33.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <!-- Row 5 -->
+    <rect x="33.75" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="45" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="56.25" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="67.5" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <!-- Row 6 -->
+    <rect x="0" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="22.5" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="33.75" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="45" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="56.25" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="67.5" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="78.75" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <!-- Row 7 -->
+    <rect x="22.5" y="67.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="33.75" y="67.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <!-- Row 8 -->
+    <rect x="56.25" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="67.5" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="78.75" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+  </g>
+  
+  <!-- Score Display -->
+  <rect x="155" y="200" width="90" height="15" rx="3" fill="#4e54c8" opacity="0.8" />
+  <text x="200" y="212" font-family="Arial" font-size="10" fill="white" text-anchor="middle">SCORE: 2580</text>
+  
+  <!-- Available Blocks -->
+  <rect x="155" y="220" width="90" height="15" rx="3" fill="#2d3436" />
+  <text x="200" y="232" font-family="Arial" font-size="8" fill="white" text-anchor="middle">AVAILABLE BLOCKS</text>
+  
+  <!-- Block Options -->
+  <g transform="translate(160, 240)">
+    <!-- L Shape -->
+    <rect x="0" y="0" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+    <rect x="0" y="10" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+    <rect x="10" y="10" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+    
+    <!-- Square Shape -->
+    <rect x="30" y="0" width="10" height="10" fill="#ff6b6b" opacity="0.9" />
+    <rect x="40" y="0" width="10" height="10" fill="#ff6b6b" opacity="0.9" />
+    <rect x="30" y="10" width="10" height="10" fill="#ff6b6b" opacity="0.9" />
+    <rect x="40" y="10" width="10" height="10" fill="#ff6b6b" opacity="0.9" />
+    
+    <!-- Line Shape -->
+    <rect x="60" y="0" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+    <rect x="70" y="0" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+    <rect x="80" y="0" width="10" height="10" fill="#4e54c8" opacity="0.9" />
+  </g>
+  
+  <!-- Shine Effect -->
+  <ellipse cx="200" cy="100" rx="40" ry="5" fill="white" opacity="0.1" />
+  
+  <!-- Watch Crown -->
+  <rect x="280" y="125" width="15" height="30" rx="5" fill="#666666" />
+  <circle cx="287.5" cy="140" r="5" fill="#999999" />
+  
+  <!-- Watch Button -->
+  <rect x="280" y="165" width="10" height="20" rx="3" fill="#666666" />
+  
+  <!-- Classic Mode Label -->
+  <text x="200" y="290" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3436" text-anchor="middle">Classic Block Puzzle</text>
+</svg>

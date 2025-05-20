@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="300" rx="10" fill="#f5f7fa" />
+  
+  <!-- Watch Outline -->
+  <rect x="120" y="25" width="160" height="250" rx="40" fill="#333333" />
+  
+  <!-- Watch Screen -->
+  <rect x="135" y="50" width="130" height="200" rx="10" fill="#000000" />
+  
+  <!-- Game Screen -->
+  <rect x="145" y="60" width="110" height="180" rx="5" fill="#1a1a1a" />
+  
+  <!-- Game Title -->
+  <rect x="155" y="70" width="90" height="20" rx="3" fill="#ff6b6b" opacity="0.8" />
+  <text x="200" y="85" font-family="Arial" font-size="10" fill="white" text-anchor="middle">ADVENTURE MODE</text>
+  
+  <!-- Game Background - Themed Environment (Forest) -->
+  <rect x="155" y="95" width="90" height="90" fill="#2d3436" />
+  
+  <!-- Forest Theme Elements -->
+  <rect x="155" y="95" width="90" height="90" fill="#2ecc71" opacity="0.2" />
+  
+  <!-- Path -->
+  <path d="M155,140 C175,130 185,150 200,140 C215,130 225,150 245,140" stroke="#e17055" stroke-width="5" stroke-linecap="round" />
+  
+  <!-- Trees -->
+  <g transform="translate(165, 110)">
+    <rect x="0" y="10" width="5" height="10" fill="#d35400" />
+    <circle cx="2.5" cy="5" r="5" fill="#27ae60" />
+  </g>
+  
+  <g transform="translate(185, 105)">
+    <rect x="0" y="10" width="5" height="10" fill="#d35400" />
+    <circle cx="2.5" cy="5" r="7" fill="#27ae60" />
+  </g>
+  
+  <g transform="translate(230, 115)">
+    <rect x="0" y="10" width="5" height="10" fill="#d35400" />
+    <circle cx="2.5" cy="5" r="6" fill="#27ae60" />
+  </g>
+  
+  <!-- Player Character -->
+  <g transform="translate(180, 135)">
+    <!-- Character Body -->
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#4e54c8" />
+    
+    <!-- Character Face -->
+    <circle cx="3" cy="3" r="1" fill="white" />
+    <circle cx="7" cy="3" r="1" fill="white" />
+    <path d="M3,7 C5,9 7,7 7,7" stroke="white" stroke-width="0.5" fill="none" />
+  </g>
+  
+  <!-- Game Obstacles -->
+  <g transform="translate(200, 130)">
+    <rect x="0" y="0" width="10" height="10" fill="#ff6b6b" opacity="0.9" rx="1" />
+    <line x1="2" y1="2" x2="8" y2="8" stroke="white" stroke-width="1" />
+    <line x1="8" y1="2" x2="2" y2="8" stroke="white" stroke-width="1" />
+  </g>
+  
+  <g transform="translate(220, 135)">
+    <rect x="0" y="0" width="10" height="10" fill="#ff6b6b" opacity="0.9" rx="1" />
+    <line x1="2" y1="2" x2="8" y2="8" stroke="white" stroke-width="1" />
+    <line x1="8" y1="2" x2="2" y2="8" stroke="white" stroke-width="1" />
+  </g>
+  
+  <!-- Collectible Items -->
+  <g transform="translate(165, 130)">
+    <circle cx="5" cy="5" r="4" fill="#f1c40f" />
+    <text x="5" y="7" font-family="Arial" font-size="6" fill="white" text-anchor="middle">★</text>
+  </g>
+  
+  <g transform="translate(210, 120)">
+    <circle cx="5" cy="5" r="4" fill="#f1c40f" />
+    <text x="5" y="7" font-family="Arial" font-size="6" fill="white" text-anchor="middle">★</text>
+  </g>
+  
+  <!-- Level Progress -->
+  <rect x="155" y="190" width="90" height="15" rx="3" fill="#4e54c8" opacity="0.8" />
+  <text x="200" y="202" font-family="Arial" font-size="10" fill="white" text-anchor="middle">LEVEL 3-2</text>
+  
+  <!-- Progress Bar -->
+  <rect x="155" y="210" width="90" height="8" rx="4" fill="#2d3436" />
+  <rect x="155" y="210" width="45" height="8" rx="4" fill="#ff6b6b" />
+  
+  <!-- Stars Collected -->
+  <g transform="translate(155, 225)">
+    <text x="0" y="10" font-family="Arial" font-size="8" fill="white">STARS:</text>
+    <circle cx="35" cy="7" r="3" fill="#f1c40f" />
+    <circle cx="45" cy="7" r="3" fill="#f1c40f" />
+    <circle cx="55" cy="7" r="3" fill="#f1c40f" />
+    <circle cx="65" cy="7" r="3" fill="#dddddd" />
+    <circle cx="75" cy="7" r="3" fill="#dddddd" />
+  </g>
+  
+  <!-- Shine Effect -->
+  <ellipse cx="200" cy="100" rx="40" ry="5" fill="white" opacity="0.1" />
+  
+  <!-- Watch Crown -->
+  <rect x="280" y="125" width="15" height="30" rx="5" fill="#666666" />
+  <circle cx="287.5" cy="140" r="5" fill="#999999" />
+  
+  <!-- Watch Button -->
+  <rect x="280" y="165" width="10" height="20" rx="3" fill="#666666" />
+  
+  <!-- Adventure Mode Label -->
+  <text x="200" y="290" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3436" text-anchor="middle">Block Adventure Mode</text>
+</svg>

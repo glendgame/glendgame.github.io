@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <!-- Background -->
+  <rect x="0" y="0" width="500" height="400" rx="10" fill="#f5f7fa" />
+  
+  <!-- Watch Outline -->
+  <rect x="170" y="50" width="160" height="300" rx="40" fill="#333333" />
+  
+  <!-- Watch Screen -->
+  <rect x="185" y="80" width="130" height="240" rx="10" fill="#000000" />
+  
+  <!-- Game Screen -->
+  <rect x="195" y="90" width="110" height="220" rx="5" fill="#1a1a1a" />
+  
+  <!-- Game Grid -->
+  <g transform="translate(205, 100)">
+    <!-- Grid Background -->
+    <rect x="0" y="0" width="90" height="90" fill="#2d3436" />
+    
+    <!-- Grid Lines -->
+    <line x1="0" y1="11.25" x2="90" y2="11.25" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="22.5" x2="90" y2="22.5" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="33.75" x2="90" y2="33.75" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="45" x2="90" y2="45" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="56.25" x2="90" y2="56.25" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="67.5" x2="90" y2="67.5" stroke="#636e72" stroke-width="0.5" />
+    <line x1="0" y1="78.75" x2="90" y2="78.75" stroke="#636e72" stroke-width="0.5" />
+    
+    <line x1="11.25" y1="0" x2="11.25" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="22.5" y1="0" x2="22.5" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="33.75" y1="0" x2="33.75" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="45" y1="0" x2="45" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="56.25" y1="0" x2="56.25" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="67.5" y1="0" x2="67.5" y2="90" stroke="#636e72" stroke-width="0.5" />
+    <line x1="78.75" y1="0" x2="78.75" y2="90" stroke="#636e72" stroke-width="0.5" />
+    
+    <!-- Game Blocks -->
+    <rect x="0" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="11.25" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="22.5" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="33.75" y="0" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <rect x="0" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="22.5" y="11.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <rect x="56.25" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="67.5" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="78.75" y="22.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <rect x="0" y="33.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="33.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <rect x="33.75" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="45" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="56.25" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="67.5" y="45" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <rect x="0" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="11.25" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="22.5" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="33.75" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="45" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="56.25" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="67.5" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="78.75" y="56.25" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    
+    <rect x="22.5" y="67.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    <rect x="33.75" y="67.5" width="11.25" height="11.25" fill="#4e54c8" opacity="0.9" />
+    
+    <rect x="56.25" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="67.5" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+    <rect x="78.75" y="78.75" width="11.25" height="11.25" fill="#ff6b6b" opacity="0.9" />
+  </g>
+  
+  <!-- Score Display -->
+  <rect x="205" y="200" width="90" height="20" rx="3" fill="#4e54c8" opacity="0.8" />
+  <text x="250" y="215" font-family="Arial" font-size="12" fill="white" text-anchor="middle">SCORE: 3750</text>
+  
+  <!-- Next Blocks -->
+  <rect x="205" y="230" width="90" height="30" rx="3" fill="#2d3436" />
+  <text x="250" y="245" font-family="Arial" font-size="10" fill="white" text-anchor="middle">NEXT BLOCKS</text>
+  <rect x="215" y="250" width="20" height="20" fill="#ff6b6b" opacity="0.9" />
+  <rect x="240" y="250" width="20" height="20" fill="#4e54c8" opacity="0.9" />
+  <rect x="265" y="250" width="20" height="20" fill="#ff6b6b" opacity="0.9" />
+  
+  <!-- Level Display -->
+  <rect x="205" y="280" width="90" height="20" rx="3" fill="#ff6b6b" opacity="0.8" />
+  <text x="250" y="295" font-family="Arial" font-size="12" fill="white" text-anchor="middle">LEVEL: 5</text>
+  
+  <!-- Finger Gesture -->
+  <g transform="translate(350, 150)">
+    <!-- Hand -->
+    <path d="M0,50 C0,30 10,0 30,0 C50,0 60,20 60,40 C60,60 50,80 30,80 C10,80 0,70 0,50 Z" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="2" />
+    
+    <!-- Finger -->
+    <path d="M30,10 L30,70" stroke="#fdcb6e" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Direction Arrow -->
+    <path d="M30,30 L10,50 L30,70" stroke="#e17055" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  
+  <!-- Instruction Text -->
+  <text x="350" y="220" font-family="Arial" font-size="14" fill="#2d3436" text-anchor="middle">Swipe to Move Blocks</text>
+  
+  <!-- Animated Block (to indicate movement) -->
+  <g transform="translate(100, 150)">
+    <rect x="0" y="0" width="30" height="30" fill="#4e54c8" opacity="0.9" rx="3" />
+    <rect x="0" y="30" width="30" height="30" fill="#4e54c8" opacity="0.9" rx="3" />
+    
+    <!-- Motion Lines -->
+    <line x1="40" y1="15" x2="60" y2="15" stroke="#636e72" stroke-width="2" stroke-linecap="round" stroke-dasharray="3,3" />
+    <line x1="40" y1="45" x2="60" y2="45" stroke="#636e72" stroke-width="2" stroke-linecap="round" stroke-dasharray="3,3" />
+    
+    <!-- Arrow -->
+    <path d="M70,30 L90,30 L80,15 M80,45 L90,30" stroke="#636e72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+  
+  <!-- Instruction Text -->
+  <text x="100" y="220" font-family="Arial" font-size="14" fill="#2d3436" text-anchor="middle">Drag Blocks</text>
+</svg>
