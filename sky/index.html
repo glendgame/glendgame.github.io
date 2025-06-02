@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Parkour Surfer - GlendGame</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0a0e17;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a2a3a 0%, #0a0e17 100%);
+            padding: 30px 0;
+            border-bottom: 1px solid #2a3a4a;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: #4a90e2;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #4a90e2;
+        }
+        
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(rgba(10, 14, 23, 0.8), rgba(10, 14, 23, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500"><rect width="1000" height="500" fill="%230a0e17"/><circle cx="300" cy="250" r="100" fill="%232a3a4a"/><circle cx="700" cy="250" r="150" fill="%231a2a3a"/><circle cx="500" cy="150" r="50" fill="%234a90e2"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: #b0b0b0;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #3a80d2;
+        }
+        
+        .features {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #b0b0b0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .feature-card {
+            background-color: #1a2a3a;
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .feature-card p {
+            color: #b0b0b0;
+        }
+        
+        .about {
+            padding: 80px 0;
+            background-color: #0f1520;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .about-text p {
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        
+        .about-image {
+            position: relative;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a2a3a 0%, #0a0e17 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .about-image-content {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .about-image-content h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #4a90e2;
+        }
+        
+        .about-image-content p {
+            color: #ffffff;
+            font-size: 18px;
+        }
+        
+        .contact {
+            padding: 80px 0;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-info h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .contact-info p {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+        
+        .contact-details {
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #1a2a3a;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .contact-icon i {
+            color: #4a90e2;
+            font-size: 20px;
+        }
+        
+        .contact-text h3 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        
+        .contact-text p, .contact-text a {
+            color: #b0b0b0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-text a:hover {
+            color: #4a90e2;
+        }
+        
+        footer {
+            background-color: #0a0e17;
+            padding: 30px 0;
+            border-top: 1px solid #2a3a4a;
+            text-align: center;
+        }
+        
+        .footer-content p {
+            color: #b0b0b0;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .about-content, .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Glend<span>Game</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Planet Parkour Surfer</h1>
+            <p>Unleash an immersive cosmic adventure on your wrist and master the art of precision!</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Features</h2>
+                <p>Discover what makes Planet Parkour Surfer a unique gaming experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🪐</div>
+                    <h3>Physics-Driven Gravitational Parkour</h3>
+                    <p>Realistic celestial mechanics mean every jump requires calculating planet mass, orbital speed, and magnetic field range. Travel from Earth to Mars, Jupiter, and beyond—each planet's unique gravity demands strategic adjustments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Reaction & Strategy in Perfect Balance</h3>
+                    <p>Swipe to control your ship's orbit. When a target planet comes into view, time your launch precisely—too early, and inertia flings you out of the system; too late, and the current planet's gravity pulls you back.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Offline Achievement System</h3>
+                    <p>Earn 30+ unlockable medals and milestones without an internet connection, each marking a new feat in your interstellar journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Interstellar Leap: Planet Parkour Challenge</h2>
+                    <p>Designed exclusively for small-screen devices, this hardcore parkour game lets you pilot an interstellar ship starting from Earth. Navigate between planets using a realistic physics engine that simulates gravitational jumps—circle your current planet, time your escape perfectly, and land your ship in the next planet's magnetic field to proceed.</p>
+                    <p>Miss the field, and your ship drifts out of control; hit the planet's surface, and it's game over.</p>
+                    <p><strong>Note:</strong> This app is exclusively compatible with watchOS.</p>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-content">
+                        <h3>Cosmic Conqueror</h3>
+                        <p>Master the art of interstellar parkour and become the ultimate cosmic traveler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Feel free to reach out to us with any questions, suggestions, or feedback about Planet Parkour Surfer. We're always looking to improve our game and provide the best experience for our players.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i>✉️</i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:glendstd@hotmail.com">glendstd@hotmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-content">
+                        <h3>Join Our Journey</h3>
+                        <p>We're constantly evolving and expanding our cosmic universe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 GlendGame. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
