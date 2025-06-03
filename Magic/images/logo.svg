@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a3093" />
+      <stop offset="100%" stop-color="#a044ff" />
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Magic Wand Icon -->
+    <path d="M30,15C30,11.7 32.7,9 36,9C39.3,9 42,11.7 42,15C42,18.3 39.3,21 36,21C32.7,21 30,18.3 30,15M54.2,17.5L60,11.7L66.6,18.3L61.8,23.1L54.2,17.5M54.2,52.5L61.7,46.9L66.6,51.7L60,58.3L54.2,52.5M22.3,21.7L18.9,18.3L24.6,12.6L26.7,14.7L22.3,21.7M60,25.5A30,30 0 0,0 30,55.5L30,63.2L25.2,55.5A30,30 0 0,0 60,25.5Z" fill="url(#logoGradient)"/>
+    
+    <!-- Text: Magic Puzzle -->
+    <text x="80" y="30" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#5a2d82">Magic Puzzle</text>
+    <text x="80" y="45" font-family="Arial, sans-serif" font-size="12" fill="#8a4dbd">by GlendGame</text>
+  </g>
+</svg>

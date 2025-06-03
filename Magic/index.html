@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Puzzle - A Magical Match-3 Experience for iWatch</title>
+    <meta name="description" content="Magic Puzzle is a relaxing match-3 game designed for iWatch, offering a magical experience at your fingertips.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Magic Puzzle Logo" width="200" height="60">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Enter the World of Magic</h1>
+                <p>A magical match-3 puzzle experience designed exclusively for iWatch</p>
+                <div class="magic-sparkle" style="background-image: url('images/magic-pattern.svg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Magic Puzzle</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This is a magic-themed puzzle game specially designed for iWatch, offering you a relaxing match-3 experience. In the game, you'll become a magic item expert, navigating through fantastical shelves to sort and match various magical objects.</p>
+                    <p>With just a tap on the screen, you can start an engaging match-3 challenge—simply combine identical magic items skillfully to complete the elimination goal within the time limit and clear the level.</p>
+                </div>
+                <div class="magic-icon">
+                    <div class="magic-wand"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Magical Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon relaxation"></div>
+                    <h3>Relaxing Experience</h3>
+                    <p>Whether you seek a moment of relaxation during fragmented time or wish to experience the wonder of the magical world at your fingertips, this container puzzle journey delivers stress-relieving fun.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon offline"></div>
+                    <h3>Offline Play</h3>
+                    <p>As an offline game, it requires no internet connection, allowing you to enjoy a carefree gaming experience in a world where magic and matching meet.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon iwatch"></div>
+                    <h3>Designed for iWatch</h3>
+                    <p>Specially optimized for the iWatch interface, providing a seamless and intuitive gaming experience right on your wrist.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon challenge"></div>
+                    <h3>Magical Challenges</h3>
+                    <p>Test your matching skills with increasingly challenging levels that will keep you engaged and entertained.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback about Magic Puzzle? We'd love to hear from you!</p>
+            <div class="contact-info">
+                <div class="contact-method">
+                    <div class="contact-icon email"></div>
+                    <p>Email: <a href="mailto:glendstd@hotmail.com">glendstd@hotmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2023 GlendGame. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Simple JavaScript for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation to sections
+            const sections = document.querySelectorAll('section');
+            
+            const observerOptions = {
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
