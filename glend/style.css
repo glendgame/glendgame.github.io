@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
+    --dark-color: #1e1b4b;
+    --light-color: #f8fafc;
+    --text-color: #334155;
+    --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient);
+    opacity: 0.9;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about {
+    padding: 6rem 0;
+    background: var(--light-color);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--gradient);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.studio-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.studio-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+/* Contact Section */
+.contact {
+    padding: 6rem 0;
+    background: white;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
+    background: var(--gradient);
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4);
+}
+
+.email-icon {
+    font-size: 1.5rem;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer p {
+    opacity: 0.8;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .email-container {
+        flex-direction: column;
+        padding: 1.5rem 2rem;
+    }
+
+    .email-link {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
